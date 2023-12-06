@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    animation-name: translateCube;
+    animation-duration: 15s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes translateCube {
+    0% {
+        transform: translateY(500px);
+        background-color: aqua;
+    }
+
+    25% {
+        transform: translateX(500px);
+        background-color: yellow;
+    }
+
+    50% {
+        transform: translateY(-500px);
+        background-color: blueviolet;
+    }
+
+    75% {
+        transform: translateX(-500px);
+        background-color: chartreuse;
+
+    }
+}
